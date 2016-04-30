@@ -1,3 +1,3 @@
 # Food-Allergy-Education-App-Prototype
 
-There are several branches for each screen in the app
+All files are in the most recent version in the questionnaire branch
