@@ -1,1 +1,0 @@
-# Food-Allergy-Education-App-Prototype
