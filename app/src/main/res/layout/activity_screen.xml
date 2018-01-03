@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.felix.Allergenius.SCREEN"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TEST"
+        android:id="@+id/start"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:maxHeight="50dp"
+        android:minHeight="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_row="0"
+        android:layout_column="2" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/smoothie"
+        android:layout_below="@+id/pizza"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_row="1"
+        android:layout_column="0" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/muffin"
+        android:layout_below="@+id/pizza"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="57dp"
+        android:layout_row="3"
+        android:layout_column="0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="325dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Instructions: Feed the customers the right food, and make sure you don&apos;t feed them food they are allergic to!"
+        android:id="@+id/textView2"
+        android:minHeight="200dp"
+        android:minWidth="20dp"
+        android:maxWidth="100dp"
+        android:gravity="center|center_vertical"
+        android:layout_above="@+id/pizza"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_row="3"
+        android:layout_column="2" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/burger"
+        android:layout_below="@+id/muffin"
+        android:layout_alignLeft="@+id/start"
+        android:layout_alignStart="@+id/start"
+        android:minHeight="50dp"
+        android:nestedScrollingEnabled="false"
+        android:minWidth="50dp"
+        android:src="@mipmap/burgers"
+        android:layout_row="6"
+        android:layout_column="0" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/salad"
+        android:layout_centerHorizontal="true"
+        android:maxHeight="50dp"
+        android:minHeight="50dp"
+        android:minWidth="50dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/salads"
+        android:layout_row="6"
+        android:layout_column="1" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pizza"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_row="6"
+        android:layout_column="2"
+        android:src="@mipmap/pizzas" />
+
+</GridLayout>

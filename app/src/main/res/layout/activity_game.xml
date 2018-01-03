@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.felix.Allergenius.game"
+    android:background = "@drawable/background"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/burgerDrag"
+        android:visibility="visible"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="53dp"
+        android:background="@null" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/firstaid"
+        android:layout_marginTop="65dp"
+        android:visibility="visible"
+        android:background="@null"
+        android:minHeight="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/burgerDrag"
+        android:layout_alignEnd="@+id/burgerDrag" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/smoothieButton"
+        android:background="@null"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="Smoothie" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pizzaButton"
+        android:background="@null"
+        android:layout_alignBottom="@+id/burgerDrag"
+        android:layout_toRightOf="@+id/smoothieButton"
+        android:layout_toEndOf="@+id/smoothieButton"
+        android:minWidth="100dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:id="@+id/button2"
+        android:layout_below="@+id/firstaid"
+        android:layout_toRightOf="@+id/burgerDrag"
+        android:layout_toEndOf="@+id/burgerDrag"
+        android:layout_marginLeft="178dp"
+        android:layout_marginStart="178dp" />
+
+</RelativeLayout>
